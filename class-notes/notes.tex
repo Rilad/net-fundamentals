@@ -1,0 +1,141 @@
+\documentclass[12pt,executivepaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{listings}
+\definecolor{editorGray}{rgb}{0.95, 0.95, 0.95}
+\definecolor{editorOcher}{rgb}{1, 0.5, 0} % #FF7F00 -> rgb(239, 169, 0)
+\definecolor{editorGreen}{rgb}{0, 0.5, 0} % #007C00 -> rgb(0, 124, 0)
+\usepackage{upquote}
+\usepackage{listings}
+\lstdefinelanguage{JavaScript}{
+	morekeywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	morecomment=[s]{/*}{*/},
+	morecomment=[l]//,
+	morestring=[b]",
+	morestring=[b]'
+}
+
+\lstdefinelanguage{HTML5}{
+	language=html,
+	sensitive=true, 
+	alsoletter={<>=-},
+	otherkeywords={
+		% HTML tags
+		<html>, <head>, <title>, </title>, <meta, />, </head>, <body>,
+		<canvas, \/canvas>, <script>, </script>, </body>, </html>, <!, html>, <style>, </style>, ><
+	},  
+	ndkeywords={
+		% General
+		=,
+		% HTML attributes
+		charset=, id=, width=, height=,
+		% CSS properties
+		border:, transform:, -moz-transform:, transition-duration:, transition-property:, transition-timing-function:
+	},  
+	morecomment=[s]{<!--}{-->},
+	tag=[s]
+}
+
+\lstset{%
+	% Basic design
+	backgroundcolor=\color{editorGray},
+	basicstyle={\small\ttfamily},   
+	frame=l,
+	% Line numbers
+	xleftmargin={0.75cm},
+	numbers=left,
+	stepnumber=1,
+	firstnumber=1,
+	numberfirstline=true,
+	% Code design   
+	keywordstyle=\color{blue}\bfseries,
+	commentstyle=\color{darkgray}\ttfamily,
+	ndkeywordstyle=\color{editorGreen}\bfseries,
+	stringstyle=\color{editorOcher},
+	% Code
+	language=HTML5,
+	alsolanguage=JavaScript,
+	alsodigit={.:;},
+	tabsize=2,
+	showtabs=false,
+	showspaces=false,
+	showstringspaces=false,
+	extendedchars=true,
+	breaklines=true,        
+	% Support for German umlauts
+	literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}1
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+}
+
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+
+\begin{document}
+	\textbf{ \centering \Huge Digital Innovation One: .Net Fundamentals} % article
+	%\chapter{} % report
+	
+	This bootcamp is for people starting their career in software development. You will learn to develop projects in one of the most used back-end languages in the world, .NET C\#, and to solve algorithms by fully learning, from theory to practice.
+	
+	\section{Welcome to DIO} 
+	
+	Welcome to Digital Innovation One, the largest open education ecosystem in software development in Latin America. You will now start a journey to create your resume with a portfolio of innovative projects and accelerate your career to conquer great opportunities. \textbf{See bootcamp notes html web developer}.
+	
+	\section{First Steps for Web Development}
+	
+	In this course you will get an introduction to what the internet is, what it means and how its main terms work. Also learn how devices connect through different types of networks and build your first online application.
+	
+	\section{Essential Programming Logic}
+	
+	Programming logic is how the developer understands communication in order to program a program function. It makes use of algorithms, which are sequences of well-established steps, such as a cake recipe. \textbf{See bootcamp notes html web developer}.
+	
+	\section{Introduction to  Git ao GitHub}
+	
+	In this course, we'll learn a little about Git's history and how it became essential for optimizing developers' projects. We will also learn about its main commands, how the platform works and how it can simplify your work. \textbf{See bootcamp notes html web developer}.
+	
+	\section{Introduction to programming with C\#}
+	
+	In this coding challenge you will practice by developing algorithms the computational thinking concepts presented in previous classes and exercises.
+	
+	\section{First steps with .NET + C\#}
+	
+	In this course, the student will have the first contact with the .NET platform and its C\# language, learning where and how to use them. The expert will show you how to prepare an environment, handle errors, classes and objects.
+	
+	\section{Introduction to programming with .NET}
+	
+	In this coding challenge you will practice by developing algorithms the computational thinking concepts presented in previous classes and exercises.
+	
+	\section{Object orientation in .NET}
+	
+	A course for beginners in C\# and .NET that focuses on theoretical learning of the main concepts in object orientation, such as methods, classes and properties.
+	
+	\section{Creating a bank transfer application with .NET}
+	
+	Learn how to create a simple bank transfer algorithm to exercise object-oriented thinking, the main programming paradigm used in the market. In this project you will learn: How to think object-oriented, how to model your domain, how to use enums.
+	
+	\section{Troubleshooting with .NET}
+	
+	In this coding challenge you will practice by developing algorithms the computational thinking concepts presented in previous classes and exercises.
+	
+	\section{SQL SERVER - Creating your first queries}
+	
+	Learn from the installation and configuration of the environment with SQL Server and perform your first SQL queries in practice.
+	
+	\section{Creating a simple APP to register series in .NET}
+	
+	Learn how to create a simple series registration algorithm to practice your knowledge of object orientation, the main programming paradigm used in the market. In this project you will learn: How to think object-oriented, how to model your domain, how to use collection resources to save your data in memory.
+	
+\end{document}
